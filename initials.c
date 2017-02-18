@@ -28,11 +28,8 @@ void show_initials(string name)
             printf("%c", toupper(name[i]));
             
             // Пропускаем все последующие символы пока не встретим пробел
-            do
-            {
+            while(name[i + 1] != ' ' && i < strlen(name))
                 i++;
-            }
-            while(name[i + 1] != ' ' && i < strlen(name));
         }
     }
 }
